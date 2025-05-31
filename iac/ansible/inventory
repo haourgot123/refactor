@@ -1,2 +1,2 @@
 [servers]
-34.143.157.10 ansible_ssh_private_key_file=/home/quandv/.ssh/id_rsa
+34.87.61.40 ansible_ssh_private_key_file=/home/nguyenhao/.ssh/id_ed25519

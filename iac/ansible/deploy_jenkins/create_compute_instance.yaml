@@ -8,10 +8,10 @@
         # Refer to https://cloud.google.com/compute/docs/images/os-details#ubuntu_lts
         # or use the command `gcloud compute images list --project=ubuntu-os-cloud`
         zone: asia-southeast1-b
-        project: decent-mariner-412114
+        project: 	mlops-460502
         # The service account is needed to create the resources
         auth_kind: serviceaccount
-        service_account_file: ../secrets/decent-mariner-412114-af97d2332019.json
+        service_account_file: ../secrets/secret.json
         disks:
           - auto_delete: true
             boot: true
@@ -40,6 +40,6 @@
           - 0.0.0.0/0 # Allow traffic from any source (use a more specific source range for security)
         direction: INGRESS # Direction from outside to inside, EGRESS is the opposite direction
         description: Allow incoming traffic on port 30000
-        project: decent-mariner-412114
+        project: 	mlops-460502
         auth_kind: serviceaccount
-        service_account_file: ../secrets/decent-mariner-412114-af97d2332019.json
+        service_account_file: ../secrets/secret.json
